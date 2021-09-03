@@ -143,8 +143,7 @@ while theta < 2*pi:
     rate(100)
     x = r*cos(theta)
     y = r*sin(theta)
-    c = vec(random(),random(),random())
-    spinSphere.trail_color = c
+    spinSphere.trail_color = vec(random(),random(),random())
     xPos.plot(t,x)
     yPos.plot(t,y)
     spinSphere.pos = vec(x, y, 0)
