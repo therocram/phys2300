@@ -32,5 +32,14 @@ for i in range(points):
     
 # Plot the points
 plt.plot(x, y, marker="+", markersize=5, color="red", linestyle="None")
+plt.title("1000 Random Points")
+plt.grid()
+plt.axis("scaled")
+plt.xlim(0,10)
+plt.ylim(0,10)
+plt.xticks(range(11))
+plt.yticks(range(11))
+plt.xlabel("X")
+plt.ylabel("Y")
 plt.show()
 #******************************************************************************
