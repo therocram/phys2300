@@ -29,10 +29,10 @@ for i in range(duration):
         nLeft -= 1
     else:
         nLeft += 1
-    
+
 '''
 # Plot the number of molecules in the left-hand box vs. "time"
-plt.plot(tList, nLeftList, marker="+", markersize=5, color="red", lineStyle="None")
+plt.plot(tList, nLeftList, marker="+", markersize=5, color="red", linestyle="None")
 plt.title("Number of Molecules in Left Side of the Box wrt \"Time\"")
 plt.grid()
 plt.xlim(0, duration)
@@ -44,4 +44,10 @@ plt.ylabel("Number of Molecules in Left Side")
 plt.show()
 '''
 
+plt.bar(range(n+1), hist, width=0.8, color="red")
+plt.title("Number of Times Each Possible Value of the Number of Molecules in The Left Box Occurs")
+plt.xticks(range(0, n + 1, int(n/10)))
+plt.xlabel("Possible Values of NLeft")
+plt.ylabel("Number of Occurences")
+plt.show()
 
