@@ -1,0 +1,26 @@
+PHYS 2300 Final Project Documentation
+Used to Document research and changes to Project
+Updated 11/15/2021
+
+11/15/2021:
+-Project Documentation created
+-Topic Updated: Solving EM problems with numerical methods:
+	-Finite Difference
+	-Monte-Carlo
+	-Method of Lines?
+-Updated Reading List:
+	Essential:
+	-Boundary Value Problems and Partial Differencial Equations (Powers): Chapter 7
+	-Numerical Techniques in Electromagnetics (Sadiku): Chapters 1, 2, 3, 8, 9(?)
+	-Speak with Dr. Cornell
+	As necessary:
+	-Introduction to Electrodynamics (Griffiths): Electromagnetic Waves, Electrodynamics
+	-Computer Simulation Methods (Gould, Tobochnik, Christian): Chapter 10: Electrodynamics
+-Ideas for Error Reduction:
+	-Decreasing Step Size and Observing how much values changes
+	-Observing conserved quantities
+	-Compare to analytical solutions
+	
+Bibliography:
+
+	
