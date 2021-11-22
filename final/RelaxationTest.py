@@ -7,11 +7,19 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 meshResolution = 20 # Gives the number of mesh points extending in each direction;
-              # each spatial axis has points defined on [0, meshResolution]
-              # (unless it is indicated otherwise)
+                    # each spatial axis has points defined on [0, meshResolution]
+                    # (unless it is indicated otherwise)
 
 #**Unless otherwise specified the value of the potential at the boudaries of the region
 # will be 0 for each case** 
+
+#**NOTE: This function expects potential and freePoints to be the same shape!**
+def setBoundaries(potential, freePoints):
+    if potential.shape is not freePoints.shape:
+        break()
+    xEnd = potential.shape[0]
+    yEnd = potential.shape[1]
+    zEnd = potential.shape[2]
 
 # Rectangular Metal Pipe
 # Compare to: Infinitely Long Rectangular Metal Pipe (Griffiths Chapter 3, Example 5)
@@ -39,9 +47,15 @@ interval = ySize/meshResolution
 #         add variables: xMesh, yMesh, zMesh, xSize, ySize, zSize
 #         implement relaxation method: make it work for arbitrary charge distribution
 
-# Initializes a 3D NumPy array with a shape determined by the x/y/zMesh variables;
+# Initializes a 3D NumPy array of float values with a shape determined by the x/y/zMesh variables;
 # Used to store calculated values of the electrostatic potential at each mesh point
 potential = np.full((xMesh, yMesh, zMesh), 0, dtype=np.float64)
+
+# Initializes a 3D NumPy array of boolean values with the same shape as the "potential" array;
+# Used to determine which mesh points are "free." Free mesh points are points where the potential
+# is to be determined. Points that are not free are those that are given fixed values in the set-up
+# of the model.
+freePoints = np.full((xMesh, yMesh, zMesh), True, dtype=bool)
 
 # Sets the values of the potential on the x = 0 face of the pipe
 for y in range(yMesh):
