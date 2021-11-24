@@ -4,6 +4,7 @@
 # Updated 11/22/2021
 
 import time
+import json
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import cm
@@ -156,11 +157,10 @@ for y in range(yMesh):
         freePoints[0, y, z] = False 
 
 start = time.time()
-relaxation(potential, freePoints, 0.1, 1.8)
+relaxation(potential, freePoints, 0.01, 1.8)
 print(time.time() - start)
 #******************************************************************************
-
-       
+ 
 # print statements testing the values of array attributes and array entries
 #print(potential[0])
 #print("\n\n\n")
