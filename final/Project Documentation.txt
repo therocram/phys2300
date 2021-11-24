@@ -34,6 +34,14 @@ Updated 11/15/2021
 -Graphics and Visualization Ideas:
 	-Importing data to Mathematica to animate a series of contour plots; this seems better than working with 3D surfaces
 	-Side by side comparison of analytical and numerical data.
+	
+11/24/2021:
+-Graphics and Visualization:
+	-Program has been moved to a Jupyter Notebook environment and renamed "RelaxationTestJ.py"
+	-The Jupyter Notebook environment executes the algorithm much slower (it takes about 4 times as long as a traditional
+	 Python environment) but it is overall a much better environment because it allows the code to be seperated into "cells"
+	 so that different parts of the program can be executed seperately. This allows me to run the relaxation algorithm once
+	 and then experiment with graphing the data without having to re-run the algorithm multiple times.
 Bibliography:
 
 	
