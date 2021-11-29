@@ -42,6 +42,10 @@ Updated 11/15/2021
 	 Python environment) but it is overall a much better environment because it allows the code to be seperated into "cells"
 	 so that different parts of the program can be executed seperately. This allows me to run the relaxation algorithm once
 	 and then experiment with graphing the data without having to re-run the algorithm multiple times.
+	 
+11/29/2021:
+-RelaxationTestJ Analysis:
+	-Tolerance:
 Bibliography:
 
 	
